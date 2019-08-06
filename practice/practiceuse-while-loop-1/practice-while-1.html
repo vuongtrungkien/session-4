@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice while</title>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+        let sum = 0;
+        let num = parseInt(prompt("Enter the number"));
+        while (num != -1) {
+            document.write(num + '<br/>');
+            sum += num;
+            num = parseInt(prompt("Enter a number. Enter '-1' to quit"));
+
+        }
+        document.getElementById("result").innerHTML ="Total :   " + sum;
+    </script>
+</body>
+</html>
